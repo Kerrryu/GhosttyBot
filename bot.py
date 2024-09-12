@@ -6,8 +6,8 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-MONITOR_CHANNEL_ID = 1174880713934385234
-INFO_CHANNEL_ID = 1174880713934385234
+MONITOR_CHANNEL_ID = os.getenv('MONITOR_CHANNEL_ID')
+INFO_CHANNEL_ID = os.getenv('INFO_CHANNEL_ID')
 
 @bot.event
 async def on_ready():
