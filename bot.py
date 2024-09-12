@@ -40,7 +40,16 @@ async def analyze_intent(message_content):
     messages = [
         {
             'role': 'system',
-            'content': 'I need you to analyze the intent of the following message. Our bot is in a discord server and it is monitoring a specific channel. The purpose of the server is for a new terminal emulator called Ghostty. People sometimes request invites to the beta, and when they do, they usually say something like "please send me an invite" or "how do I get an invite?" or "send me an invite pls". The possible intents are: request_access_to_beta, unknown. Respond with the intent name.'
+            'content': (
+                'I need you to analyze the intent of the following message. Our bot is in a discord server and it is monitoring a specific channel. '
+                'The purpose of the server is for a new terminal emulator called Ghostty. People sometimes request invites to the beta, and when they do, '
+                'they usually say something like "please send me an invite" or "how do I get an invite?" or "send me an invite pls". '
+                'The possible intents are: request_access_to_beta, unknown. '
+                'Only classify the message as "request_access_to_beta" if it explicitly asks for an invite to the beta. '
+                'Examples of messages that should be classified as "request_access_to_beta": "Can I get an invite to the beta?", "I would like to join the beta, please send an invite." '
+                'Examples of messages that should be classified as "unknown": "How can I contribute to the beta?", "What is the beta about?", "I have a question about the beta.", "anything else" '
+                'Respond with the intent name.'
+            )
         },
         {
             'role': 'user',

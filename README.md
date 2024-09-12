@@ -4,7 +4,7 @@ GhosttyBot is a Discord bot designed specifically for the Ghostty community. Gho
 
 ## Overview
 
-The bot is built to alleviate the annoying factor on the developer and mod team by automatically handling questions about beta invites in the Discord server. It monitors a specific channel for messages containing the word "invite" and responds with a redirect to the information channel. Planning to add Ollama support to analyze the intent of the users message as sometimes there is a general question about the invite process instead of a request for an invite.
+The bot is built to alleviate the annoying factor on the developer and mod team by automatically handling questions about beta invites in the Discord server. It monitors a specific channel for messages containing the word "invite" and responds with a redirect to the information channel. Added Ollama support to analyze the intent of the users message as sometimes there is a general question about the invite process instead of a request for an invite.
 
 ## Setup
 
